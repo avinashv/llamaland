@@ -8,7 +8,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'sequel'
-require 'haml'
 
 configure do
     DB = Sequel.sqlite
