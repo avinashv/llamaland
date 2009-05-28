@@ -1,3 +1,10 @@
+# llama land
+# a url shortner in sinatra
+# http://github.com/avinashv/llamaland/tree/master
+#
+# by avinash vora
+# http://avinashv.net
+
 require 'rubygems'
 require 'sinatra'
 require 'sequel'
