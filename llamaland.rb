@@ -22,3 +22,8 @@ get '/' do
     </form>
     EOF
 end
+
+post '/' do
+    id = DB[:urls].insert(:url => params[:url])
+    "#{request.url + id.to_s(encoding_base)}"
+end
