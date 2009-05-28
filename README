@@ -1,0 +1,5 @@
+** Llama Land **
+
+Llama Land is a 30-line URL shortner written as an exercise in Sinatra and Sequel.  Given that it seems the new "hello, world" app for web frameworks is now a URL shortner, I figured that I'd start much the same.
+
+The code is GPL-licensed.
