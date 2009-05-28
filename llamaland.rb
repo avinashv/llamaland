@@ -14,13 +14,16 @@ configure do
 end
 
 get '/' do
-    <<-EOF
+    <<-EOS
     <form method="post">
-        <p>Enter a URL to shorten with the Llama Land URL Shortner:</p>
         <input type="text" name="url" />
         <input type="submit" value="Shorten URL" />
     </form>
-    EOF
+    EOS
+end
+
+get '/:shorturl' do
+    redirect DB[:urls].first(:id => params[:shorturl].to_i(encoding_base))[:url]
 end
 
 post '/' do
